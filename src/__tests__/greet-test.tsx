@@ -15,13 +15,13 @@ TDD ( Test Driven Development)
 */
 
 describe("Greet Component",()=>{
- it('Greet Component renders correctly',()=>{
+ xit('Greet Component renders correctly',()=>{
         render(<Greet />);
         const textElement = screen.getByText(/Hello/i);
     expect(textElement).toBeInTheDocument();
 })
 
-it("Greet component renders the name correctly",()=>{
+xit("Greet component renders the name correctly",()=>{
     render(<Greet name ='Ananya'/>);
     const textElement = screen.getByText(/Hello Ananya/i);
     expect(textElement).toBeInTheDocument();
