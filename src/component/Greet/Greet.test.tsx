@@ -14,10 +14,10 @@ followed by the name passed in
 TDD ( Test Driven Development)
 */
 
-
-test('Greet Component renders correctly',()=>{
-    render(<Greet />);
-    const textElement = screen.getByText(/Hello/i);
+describe("Greet Component",()=>{
+ test('Greet Component renders correctly',()=>{
+        render(<Greet />);
+        const textElement = screen.getByText(/Hello/i);
     expect(textElement).toBeInTheDocument();
 })
 
@@ -25,4 +25,5 @@ test("Greet component renders the name correctly",()=>{
     render(<Greet name ='Ananya'/>);
     const textElement = screen.getByText(/Hello Ananya/i);
     expect(textElement).toBeInTheDocument();
+})
 })
