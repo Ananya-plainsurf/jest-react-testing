@@ -16,7 +16,7 @@ TDD ( Test Driven Development)
 
 
 test('Greet Component renders correctly',()=>{
-    render(<Greet name={''}/>);
+    render(<Greet />);
     const textElement = screen.getByText(/Hello/i);
     expect(textElement).toBeInTheDocument();
 })

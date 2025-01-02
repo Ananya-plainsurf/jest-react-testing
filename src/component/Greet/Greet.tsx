@@ -12,12 +12,12 @@
 import React from "react";
 
 type GreetProps={
-    name:string
+    name?:string
 }
 
 
 const Greet:React.FC<GreetProps> = ({name})=>{
-    return (<span>Hello ${name}</span>)
+    return (<span>{`Hello ${name}`}</span>)
 }
 
 export default Greet
