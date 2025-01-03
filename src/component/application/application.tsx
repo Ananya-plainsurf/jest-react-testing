@@ -12,7 +12,7 @@ const Application = () => {
         <h5>Please fill the form</h5>
       <div>
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" placeholder="name" />
       </div>
       <div>
         <label htmlFor="bio">Bio:</label>
