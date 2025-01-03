@@ -23,4 +23,10 @@ describe("IncrementButton Component", () => {
     expect(handleDecrement(5)).toBe(4);
     expect(handleDecrement(0)).toBe(0);
   });
+
+  test('Loading Text appears correctly',async ()=>{
+    render(<IncrementButton/>);
+    const loadingElement = await screen.findByRole('heading',{name:'Loading...'});
+    expect(loadingElement).toBeInTheDocument()
+  })
 });
