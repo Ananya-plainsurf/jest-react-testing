@@ -7,6 +7,9 @@ describe("Application Component", () => {
     const textBoxElement = screen.getByRole("textbox", { name: /name/i });
     expect(textBoxElement).toBeInTheDocument();
 
+    const textboxElement2 = screen.getByPlaceholderText('name');
+    expect(textboxElement2).toBeInTheDocument()
+
     const bioElement = screen.getByRole("textbox", { name: /bio/i });
     expect(bioElement).toBeInTheDocument();
 
