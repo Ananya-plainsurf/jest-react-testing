@@ -25,8 +25,18 @@ describe("Application Component", () => {
     expect(headingElement).toBeInTheDocument();
 
     const headingElement2 = screen.getByRole("heading", {
-      level: 5
+      level: 5,
     });
     expect(headingElement2).toBeInTheDocument();
+
+    const headingElement3 = screen.getByLabelText("Name:"
+    //     ,{
+    //     selector:'input'
+    // }
+);
+    expect(headingElement3).toBeInTheDocument();
+
+    const termsElementLabel = screen.getByLabelText('I accept the terms and conditions');
+    expect(termsElementLabel).toBeInTheDocument()
   });
 });

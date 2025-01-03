@@ -20,6 +20,7 @@ const Application = () => {
       </div>
 
       <label htmlFor="jobLocation">Job Location:</label>
+      {/* <label htmlFor="jobLocation">Name:</label> */}
       <select id="jobLocation" name="jobLocation">
         <option value="">Select a country</option>
         <option value="US">United States</option>
